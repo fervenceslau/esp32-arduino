@@ -1,1 +1,1 @@
-![Wattmeter Board](demo/board-demo.gif)
+![Wattmeter Board](demo/board-demo.jpg)
