@@ -26,7 +26,7 @@ Follow https://medium.com/@vibrologic/serverless-iots-with-firebase-realtime-dat
 1. Create a new Firebase Project.
 2. Create a new Realtime Databse.
 3. Set the Database Rules to true (**warning** anyone can alter the database).
-4. Get the Database host name and password.
+4. Get the Database host name and secret.
 5. Update [firmware](firmware/firmware.ino) with your WiFi and Realtime Database credentials (obtained in the previous step).
 
 ```
@@ -54,11 +54,17 @@ const firebaseConfig = {
 };
 ```
 
-Upload the code to ESP32 board (DoIt used).
+4. Initialize and deploy the web app project with Firebase CLI. (GIVE MORE INFO HOW TO DO THIS).
 
 
+#### Setting up the Hardware
 
-End with an example of getting some data out of the system or using it for a little demo
+1. Upload the code to ESP32 board (DOIT Esp32 DevKit v1 used).
+2. Connect the VP pin to the mains voltage sensor as described in the image below.
+
+(IMAGE)
+
+<!-- End with an example of getting some data out of the system or using it for a little demo -->
 
 <!--
 
@@ -93,6 +99,7 @@ Add additional notes about how to deploy this on a live system
 * [FirebaseESP32](https://github.com/mobizt/Firebase-ESP32) - Firebase Arduino Library for ESP32
 * [arduinoFFT](https://github.com/kosme/arduinoFFT) - Arduino FFT Library
 * [Chartjs](https://www.chartjs.org/) - Used to generate the graphs
+* [DOIT Esp32 DevKit v1](https://docs.zerynth.com/latest/official/board.zerynth.doit_esp32/docs/index.html) - ESP32 board used
 
 
 ## Authors
