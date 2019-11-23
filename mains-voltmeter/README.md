@@ -19,11 +19,13 @@ These instructions will get you a copy of the project up and running on your loc
 https://medium.com/@vibrologic/serverless-iots-with-firebase-realtime-database-and-esp32-2d86eda06ff1
 
 
-1 - Create a new firebase project
-2 - Create a new Realtime Databse
-3 - Set the Database Rules to true - anyone can alter the database, next authentication
-4 - Get the Database host name and password
-5 - Update [firmware](firmware/firmware.ino) with your WiFi and Database credentials obtained in the previous step.
+#### Creating Realtime Database
+
+1. Create a new firebase project
+2. Create a new Realtime Databse
+3. Set the Database Rules to true - anyone can alter the database, next authentication
+4. Get the Database host name and password
+5. Update [firmware](firmware/firmware.ino) with your WiFi and Database credentials obtained in the previous step.
 
 ```
 #define WIFI_SSID           "XXX"                 // owner's network ssid
@@ -32,9 +34,11 @@ https://medium.com/@vibrologic/serverless-iots-with-firebase-realtime-database-a
 #define FIREBASE_AUTH       "XXX"                 // secret (40 chars) (deprecated...)
 ```
 
-6 - Click on the Cog Icon next to "Project Overview" (Project Settings) and select "Project Configuration". Under "General" tab, look for "Your Apps" and click the </> symbol to add a new web app. Choose an App nickname and check the box below to set up Firebase Hosting. Follow the instructions and then click on the last button to go to the console.
-7 - Now that we are back to the previous screen, click the "Config" radio button under "Firebase SDK snippet" to get the firebase configuration script.
-6 - Update [jscript](firebase/public/myapp.js) with the information obtained in the previous step.
+#### Setting Firebase Hosting
+
+1. Click on the Cog Icon next to **Project Overview** (Project Settings) and select **Project Configuration**. Under **General** tab, look for **Your Apps** and click the **</>** symbol to add a new web app. Choose an App nickname and check the box below to set up **Firebase Hosting**. Follow the instructions and then click on the last button to go to the console.
+2. Now that we are back to the previous screen, click the "Config" radio button under "Firebase SDK snippet" to get the firebase configuration script.
+3. Update [jscript](firebase/public/myapp.js) with the information obtained in the previous step.
 
 ```
 const firebaseConfig = {
