@@ -11,5 +11,5 @@ Visit the project's website at https://easyeda.com/fervenceslau/esp32_mains_powe
 |![](demo/schematic.png)                 |
 
 |       PCB        |    Final Result     |
-| -------------------------------------- |
+| -----------------|-------------------- |
 |![](demo/pcb.png) | ![](demo/result.png)|
