@@ -1,4 +1,4 @@
-# Mains Power Measurement Hardware
+# Hardware
 
 <Introduction>
 
