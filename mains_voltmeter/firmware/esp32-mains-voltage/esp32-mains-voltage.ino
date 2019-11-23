@@ -7,15 +7,14 @@
 #include "arduinoFFT.h"
 
 // Definitions for Wifi and firebase
-#define WIFI_SSID           "XXX" // owner's network ssid
-#define WIFI_PASSWORD       "XXX"    // owner's network password
+#define WIFI_SSID           "XXX"                 // owner's network ssid
+#define WIFI_PASSWORD       "XXX"                 // owner's network password
 
-#define FIREBASE_HOST       "XXX"         // firebase's project site
-#define FIREBASE_AUTH       "XXX"  // secret (40 chars) (deprecated...)
+#define FIREBASE_HOST       "XXX"                 // firebase's project site
+#define FIREBASE_AUTH       "XXX"                 // secret (40 chars) (deprecated...)
 
 // Definitions for sine wave sampling
-#define VP                  36              // ESP32 analog read pin VP
-#define VN                  39              // ESP32 analog read pin VN
+#define VP                  36                    // ESP32 analog read pin VP
 #define SAMPLE_SIZE         512                   // power of 2
 #define SAMPLE_FREQ         2048                  // in hz (power of 2 to keep fft's bins in discrete freq. interval)
 #define SAMPLE_PERIOD       1000000/SAMPLE_FREQ   // in us
