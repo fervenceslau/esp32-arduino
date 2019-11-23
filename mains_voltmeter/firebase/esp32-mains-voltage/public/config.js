@@ -3,13 +3,13 @@
 //--------------------------------------------------------
 // Your web app's Firebase configuration
 const firebaseConfig = {
-	apiKey: "AIzaSyBvILAk45nniKIS8bwCmpRqS8Dqju8fMmw",
-	authDomain: "esp32-sensor-teste.firebaseapp.com",
-	databaseURL: "https://esp32-sensor-teste.firebaseio.com",
-	projectId: "esp32-sensor-teste",
-	storageBucket: "",
-	messagingSenderId: "763611244979",
-	appId: "1:763611244979:web:3a10e663150145a2e5c3c6"
+	apiKey: "api-key",
+	authDomain: "project-id.firebaseapp.com",
+	databaseURL: "https://project-id.firebaseio.com",
+	projectId: "project-id",
+	storageBucket: "project-id.appspot.com",
+	messagingSenderId: "sender-id",
+	appId: "app-id"
 };
   
 // Initialize Firebase
