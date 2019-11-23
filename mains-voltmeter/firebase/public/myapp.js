@@ -1,15 +1,13 @@
-// -------------------------------------------------------
+
 // Firebase Configuration & initialization
-//--------------------------------------------------------
-// Your web app's Firebase configuration
 const firebaseConfig = {
-	apiKey: "api-key",
-	authDomain: "project-id.firebaseapp.com",
-	databaseURL: "https://project-id.firebaseio.com",
-	projectId: "project-id",
-	storageBucket: "project-id.appspot.com",
-	messagingSenderId: "sender-id",
-	appId: "app-id"
+	apiKey: 				"XXX",
+	authDomain: 			"XXX",
+	databaseURL: 			"XXX",
+	projectId: 				"XXX",
+	storageBucket: 			"XXX",
+	messagingSenderId: 		"XXX",
+	appId: 					"XXX"
 };
   
 // Initialize Firebase

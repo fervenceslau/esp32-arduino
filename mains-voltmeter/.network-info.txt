@@ -1,0 +1,29 @@
+TP-LINK_NANDO
+Garfield01
+
+esp32-sensor-teste.firebaseio.com
+bQdWPusagBKXRgBs5f9BrroPWb15yI9CfX7XgsU1
+
+const firebaseConfig = {
+	apiKey: "AIzaSyBvILAk45nniKIS8bwCmpRqS8Dqju8fMmw",
+	authDomain: "esp32-sensor-teste.firebaseapp.com",
+	databaseURL: "https://esp32-sensor-teste.firebaseio.com",
+	projectId: "esp32-sensor-teste",
+	storageBucket: "",
+	messagingSenderId: "763611244979",
+	appId: "1:763611244979:web:3a10e663150145a2e5c3c6"
+};
+
+
+
+new 
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCsUdpYBElatAcbAqJkqFggl5TNcU5XbVQ",
+  authDomain: "esp32-mains-voltage-monitor.firebaseapp.com",
+  databaseURL: "https://esp32-mains-voltage-monitor.firebaseio.com",
+  projectId: "esp32-mains-voltage-monitor",
+  storageBucket: "esp32-mains-voltage-monitor.appspot.com",
+  messagingSenderId: "86045651985",
+  appId: "1:86045651985:web:a21c1867cfd84ca16aadb0"
+};
