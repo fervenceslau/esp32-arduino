@@ -7,11 +7,11 @@
 #include "arduinoFFT.h"
 
 // Definitions for Wifi and firebase
-#define WIFI_SSID           "TP-LINK_NANDO" // owner's network ssid
-#define WIFI_PASSWORD       "Garfield01"    // owner's network password
+#define WIFI_SSID           "XXX" // owner's network ssid
+#define WIFI_PASSWORD       "XXX"    // owner's network password
 
-#define FIREBASE_HOST       "esp32-sensor-teste.firebaseio.com"         // firebase's project site
-#define FIREBASE_AUTH       "bQdWPusagBKXRgBs5f9BrroPWb15yI9CfX7XgsU1"  // secret (40 chars) (deprecated...)
+#define FIREBASE_HOST       "XXX"         // firebase's project site
+#define FIREBASE_AUTH       "XXX"  // secret (40 chars) (deprecated...)
 
 // Definitions for sine wave sampling
 #define VP                  36              // ESP32 analog read pin VP
