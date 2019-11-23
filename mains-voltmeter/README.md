@@ -21,7 +21,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 #### Creating a Firebase Realtime Database
 
-Go to https://medium.com/@vibrologic/serverless-iots-with-firebase-realtime-database-and-esp32-2d86eda06ff1 to see the step by step guide with images that are described in this section.
+Follow https://medium.com/@vibrologic/serverless-iots-with-firebase-realtime-database-and-esp32-2d86eda06ff1 to see a step by step guide with images that are similar to the ones described in this section.
 
 1. Create a new Firebase Project.
 2. Create a new Realtime Databse.

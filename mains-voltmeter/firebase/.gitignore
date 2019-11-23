@@ -1,3 +1,6 @@
+# Firebase cache
+.network-info.txt
+
 # Logs
 logs
 *.log
