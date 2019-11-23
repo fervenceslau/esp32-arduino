@@ -57,10 +57,10 @@ const firebaseConfig = {
 4. Initialize and deploy the web app project with Firebase CLI. (GIVE MORE INFO HOW TO DO THIS).
 
 
-#### Setting up the Hardware
+#### Hardware Setup
 
 1. Upload the code to ESP32 board (DOIT Esp32 DevKit v1 used).
-2. Connect the VP pin to the mains voltage sensor as described in the image below.
+2. Connect the VP pin to the mains voltage sensor as described in the image below. Any analog voltage from 0 to 3.3 will be read by this analog pin and displayed in the Firebase web app.
 
 (IMAGE)
 
