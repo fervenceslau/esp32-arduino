@@ -22,7 +22,7 @@ Follow https://medium.com/@vibrologic/serverless-iots-with-firebase-realtime-dat
 1. Create a new Firebase Project.
 2. Create a new Realtime Databse under the **develop** tab on the left sidebar. **Important** - select a Google Cloud Platform (GCP) resource location with **Cloud Functions** support.
 3. Set the Database Rules to true. **Warning** - the database is set to public, which means anyone can alter the database. In future projects, authentication procedures will be added.
-4. Open **Project Settings** by clicking on the Cog Icon next to **Project Overview** and then selecting the first option. Under the **Service accounts** tab, click on **Database secrets** to get the Database host name and secret displayed on the window on the right.
+4. Open **Project Settings** by clicking on the Cog Icon next to **Project Overview** and then selecting the first option. Under the **Service accounts** tab, click on **Database secrets** to get both the Database host name and its secret, which are displayed on the right.
 5. Update [firmware](firmware/firmware.ino) with your WiFi and Realtime Database credentials (obtained in the previous step).
 
 ```
