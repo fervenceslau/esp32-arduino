@@ -1,4 +1,4 @@
-# Mains Voltmeter Remote Monitoring
+# Mains Voltage Remote Monitoring
 
 ![Firebase Voltmeter Demo](demo/voltmeter-demo.gif)
 
@@ -9,9 +9,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-* Arduino core for the ESP32 (https://github.com/espressif/arduino-esp32)
-* Google's Firebase Realtime Database Arduino Library for ESP32 (https://github.com/mobizt/Firebase-ESP32)
-* Fast Fourier Transform for Arduino Library (https://github.com/kosme/arduinoFFT)
+* Knowledge on how to program ESP32 devices with Arduino IDE.
+* [Dependencies](##Built With) are listed at the bottom of the page.
 
 
 ### Installing
@@ -59,18 +58,18 @@ const firebaseConfig = {
 ```
 
 #### Deploying Web App with CLI (windows)
-1. Open CLI terminal and navegate to firebase folder using `cd` command.
+1. Open firebase-cli.exe and navegate to this project's firebase folder using the `cd` command.
 2. Initialize a Firebase project with `firebase init`.
-3. Proceed with the initialization and then select *Cloud Functions* and *Hosting* features. CLI will find an existing project in this folder and then ask to configure *functions* and then *hosting* files. 
-4. *Hosting*. Select *TypeScript* as the language used in *Cloud Functions* and choose to use TSLint. Do not overwrite any files asked in this configuration.
+3. Proceed with the initialization and then select **Cloud Functions** and **Hosting** features. CLI will find an existing project in this folder and then ask to configure **functions** and then **hosting** files. 
+4. **Functions**. Select **TypeScript** as the language used in **Cloud Functions** and choose to use TSLint. Do not overwrite any files asked in this configuration.
    - CLI may ask to install npm dependencies afterwards. It is wise to accept this procedure. 
-5. *Hosting*. Press enter to select "public" as the web app main folder and accept to rewrite all urls to index. Do not overwrite any files asked in this configuration.
-6. Deploy the web app project with `firebase deploy`. This step will take some time, and in the end CLI will return the URL for the web app, such as "Hosting URL: https://esp32-mains-voltage-monitor.firebaseapp.com".
+5. **Hosting**. Press enter to select **public** as the web app main folder and accept to rewrite all urls to index. Do not overwrite any files asked in this configuration.
+6. Deploy the web app project with `firebase deploy`. This step will take some time, and in the end CLI will return the URL for the web app, such as **Hosting URL: https://esp32-mains-voltage-monitor.firebaseapp.com**.
 
 
 #### Hardware Configuration
 
-1. Upload the code to ESP32 board ([DOIT Esp32 DevKit v1](https://docs.zerynth.com/latest/official/board.zerynth.doit_esp32/docs/index.html) used).
+1. Upload the code to ESP32 board ([DOIT Esp32 DevKit v1](https://docs.zerynth.com/latest/official/board.zerynth.doit_esp32/docs/index.html)).
 2. Connect the VP pin to any analog voltage source ranging from 0 to 3.3 to acquire data that will be displayed in the Firebase web app. In this project, the analog source is provided by the mains voltage sensor described by the schematic below.
 
 
