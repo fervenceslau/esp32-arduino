@@ -74,10 +74,6 @@ const firebaseConfig = {
 
 
 
-
-
-(IMAGE)
-
 <!-- End with an example of getting some data out of the system or using it for a little demo -->
 
 <!--
