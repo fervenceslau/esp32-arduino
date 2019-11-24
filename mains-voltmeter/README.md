@@ -114,7 +114,7 @@ Add additional notes about how to deploy this on a live system
 * [ESP32 with Arduino IDE](https://github.com/espressif/arduino-esp32) - Arduino core for the ESP32
 * [FirebaseESP32](https://github.com/mobizt/Firebase-ESP32) - Firebase Arduino Library for ESP32
 * [arduinoFFT](https://github.com/kosme/arduinoFFT) - Arduino FFT Library
-* [Chartjs](https://www.chartjs.org/) - Used to generate the graphs
+* [Chartjs](https://github.com/chartjs/Chart.js) - Used to generate the graphs
 
 
 ## Authors
