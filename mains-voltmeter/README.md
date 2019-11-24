@@ -10,7 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 * Knowledge on how to program ESP32 devices with Arduino IDE.
-* [Dependencies](#built-with) are listed at the bottom of the page.
+* [Dependencies](#built-with) are listed at the bottom of this page.
 
 
 ### Installing
@@ -20,9 +20,9 @@ These instructions will get you a copy of the project up and running on your loc
 Follow https://medium.com/@vibrologic/serverless-iots-with-firebase-realtime-database-and-esp32-2d86eda06ff1 to see a step by step guide with images that are similar to the ones described in this section.
 
 1. Create a new Firebase Project.
-2. Create a new Realtime Databse.
-3. Set the Database Rules to true (**warning** anyone can alter the database).
-4. Get the Database host name and secret.
+2. Create a new Realtime Databse under the **develop** tab on the left sidebar. **Important** - select a Google Cloud Platform (GCP) resource location with **Cloud Functions** support.
+3. Set the Database Rules to true. **Warning** - the database is set to public, which means anyone can alter the database. In future projects, authentication procedures will be added.
+4. Open **Project Settings** by clicking on the Cog Icon next to **Project Overview** and then selecting the first option. Under the **Service accounts** tab, click on **Database secrets** to get the Database host name and secret displayed on the window on the right.
 5. Update [firmware](firmware/firmware.ino) with your WiFi and Realtime Database credentials (obtained in the previous step).
 
 ```
@@ -58,19 +58,19 @@ const firebaseConfig = {
 ```
 
 #### Deploying Web App with CLI (windows)
-1. Open firebase-cli.exe and navegate to this project's firebase folder using the `cd` command.
+1. Open **firebase-cli.exe** and navigate to this project's firebase folder using the `cd` command.
 2. Initialize a Firebase project with `firebase init`.
-3. Proceed with the initialization and then select **Cloud Functions** and **Hosting** features. CLI will find an existing project in this folder and then ask to configure **functions** and then **hosting** files. 
+3. Proceed with the initialization and then select **Cloud Functions** and **Hosting** features. CLI will find an existing project in this folder, and ask to configure **functions** and **hosting** files. 
 4. **Functions**. Select **TypeScript** as the language used in **Cloud Functions** and choose to use TSLint. Do not overwrite any files asked in this configuration.
    - CLI may ask to install npm dependencies afterwards. It is wise to accept this procedure. 
 5. **Hosting**. Press enter to select **public** as the web app main folder and accept to rewrite all urls to index. Do not overwrite any files asked in this configuration.
-6. Deploy the web app project with `firebase deploy`. This step will take some time, and in the end CLI will return the URL for the web app, such as **Hosting URL: https://esp32-mains-voltage-monitor.firebaseapp.com**.
+6. Deploy the web app project with `firebase deploy`. This step will take some time and, in the end, CLI will return the URL for the web app, such as **Hosting URL: https://esp32-mains-voltage-monitor.firebaseapp.com**.
 
 
 #### Hardware Configuration
 
-1. Upload the code to ESP32 board ([DOIT Esp32 DevKit v1](https://docs.zerynth.com/latest/official/board.zerynth.doit_esp32/docs/index.html)).
-2. Connect the VP pin to any analog voltage source ranging from 0 to 3.3 to acquire data that will be displayed in the Firebase web app. In this project, the analog source is provided by the mains voltage sensor described by the schematic below.
+1. Upload the firmware code to ESP32 board ([DOIT Esp32 DevKit v1](https://docs.zerynth.com/latest/official/board.zerynth.doit_esp32/docs/index.html)).
+2. Connect the VP pin to any analog voltage source ranging from 0 to 3.3 V to sample the data that will be displayed in the Firebase web app every 10 min. In this project, this source is the mains voltage sensor ilustrated by the schematic below.
 
 
 
