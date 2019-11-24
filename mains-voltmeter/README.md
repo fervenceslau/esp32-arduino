@@ -76,7 +76,7 @@ const firebaseConfig = {
 | -----------------------|------------------------ |
 |![](demo/schematic.png) | ![](demo/simulation.png)|
 
-In this circuit, R3 = R4, R5 = R6 to make the differential gain equals to (R5/R3), and R1 = R2 to polarize the output of the differential amplifier at 2.5V. R7 and R8 makes a voltage divider to limit the output to the range between 0 and 3.3V.
+In this circuit, R3 = R4 and R5 = R6 to make the differential gain equals to -(R5/R3). Also, R1 = R2 to polarize the output of the differential amplifier at 2.5V. The output (V<sub>sense</sub>) is measured after a voltage divider (R7 and R8) that limits the output voltage to the range between 0 and 3.3V.
 
 For a mains voltage of 127V<sub>RMS</sub>, making R3 = 100K, R5 = 1K, R7 = 1K and R8 = 2K, the output V<sub>sense</sub> swings between 0.47 V and 2.87 V.
 
