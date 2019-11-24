@@ -70,9 +70,13 @@ const firebaseConfig = {
 #### Hardware Configuration
 
 1. Upload the firmware code to ESP32 board ([DOIT Esp32 DevKit v1](https://docs.zerynth.com/latest/official/board.zerynth.doit_esp32/docs/index.html)).
-2. Connect the VP pin to any analog voltage source ranging from 0 to 3.3 V to sample the data that will be displayed in the Firebase web app every 10 min. In this project, this source is the mains voltage sensor ilustrated by the schematic below.
+2. Connect the VP pin to any analog voltage source ranging from 0 to 3.3V to sample the data that will be displayed in the Firebase web app every 10 minutes. In this project, this source is the mains voltage sensor ilustrated by the schematic below.
 
+![Firebase Voltmeter Demo](demo/schematic.png)
 
+In this circuit, R3 = R4, R5 = R6 to make the differential gain equals to (R5/R3), and R1 = R2 to polarize the output of the differential amplifier at 2.5V. R7 and R8 makes a voltage divider to limit the output to the range between 0 and 3.3V.
+
+For a mains voltage of 127V<sub>RMS</sub>, making R3 = 100K, R5 = 1K, R7 = 1K and R8 = 2K, the output V<sub>sense</sub> swings between 0.47 V and 2.87 V.
 
 <!-- End with an example of getting some data out of the system or using it for a little demo -->
 
