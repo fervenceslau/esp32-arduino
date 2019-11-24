@@ -10,7 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 * Knowledge on how to program ESP32 devices with Arduino IDE.
-* [Dependencies](##Built With) are listed at the bottom of the page.
+* [Dependencies](#built-with) are listed at the bottom of the page.
 
 
 ### Installing
@@ -111,6 +111,7 @@ Add additional notes about how to deploy this on a live system
 ## Built With
 
 * [DOIT Esp32 DevKit v1](https://docs.zerynth.com/latest/official/board.zerynth.doit_esp32/docs/index.html) - ESP32 board used
+* [ESP32 with Arduino IDE](https://github.com/espressif/arduino-esp32) - Arduino core for the ESP32
 * [FirebaseESP32](https://github.com/mobizt/Firebase-ESP32) - Firebase Arduino Library for ESP32
 * [arduinoFFT](https://github.com/kosme/arduinoFFT) - Arduino FFT Library
 * [Chartjs](https://www.chartjs.org/) - Used to generate the graphs
