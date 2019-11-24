@@ -1,5 +1,8 @@
-# Firebase cache
+# network info
 .network-info.txt
+
+# simulation
+.simulation/
 
 # Logs
 logs
