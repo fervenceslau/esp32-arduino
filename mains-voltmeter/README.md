@@ -1,6 +1,6 @@
 # Mains Voltmeter Remote Monitoring
 
-[Firebase Voltmeter Demo](demo/voltmeter-demo.gif)
+![Firebase Voltmeter Demo](demo/voltmeter-demo.gif)
 
 
 ## Getting Started
@@ -35,7 +35,7 @@ Follow https://medium.com/@vibrologic/serverless-iots-with-firebase-realtime-dat
 
 #### Setting up Firebase Hosting
 
-1. Go to **Project Settings** by clicking on the Cog Icon next to **Project Overview** and then select **Project Configuration**. Under **General** tab, look for **Your Apps** and click the **</>** symbol to add a new web application. Choose an App Nickname and check the box below to set up **Firebase Hosting**. Follow the instructions and then click on the last button to go back to the configuration screen.
+1. Open **Project Settings** by clicking on the Cog Icon next to **Project Overview** and then select **Project Configuration**. Under **General** tab, look for **Your Apps** and click the **</>** symbol to add a new web application. Choose an App Nickname and check the box below to set up **Firebase Hosting**. Follow the instructions and then click on the last button to go back to the configuration screen.
 2. Click the **Config** radio button under **Firebase SDK snippet** to get the firebase configuration script.
 3. Update [myapp](firebase/public/myapp.js) with the information obtained in the previous step.
 
