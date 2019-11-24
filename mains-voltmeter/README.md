@@ -35,10 +35,9 @@ Follow https://medium.com/@vibrologic/serverless-iots-with-firebase-realtime-dat
 
 #### Setting up Firebase Hosting
 
-1. Open **Project Settings** by clicking on the Cog Icon next to **Project Overview** and then select **Project Configuration**. Under **General** tab, look for **Your Apps** and click the **</>** symbol to add a new web application. Choose an App Nickname and check the box below to set up **Firebase Hosting**. Follow the instructions and then click on the last button to go back to the configuration screen.
+1. Open **Project Settings** by clicking on the Cog Icon next to **Project Overview** and then selecting the first option. Under the **General** tab, look for **Your Apps** and click the **</>** symbol to add a new web application. Choose an App Nickname and check the box below to set up **Firebase Hosting**. Follow the instructions and then click on the last button to go back to the configuration screen.
 2. Click the **Config** radio button under **Firebase SDK snippet** to get the firebase configuration script.
 3. Update [myapp](firebase/public/myapp.js) with the information obtained in the previous step.
-
 ```
 const firebaseConfig = {
 	apiKey: 			"XXX",
@@ -50,13 +49,33 @@ const firebaseConfig = {
 	appId: 				"XXX"
 };
 ```
+4. Update [firebaserc](firebase/.firebaserc) with your Firebase Project ID. You can find this information under the **General** tab on **Project Settings**.
+```
+{
+  "projects": {
+    "default": "XXX"
+  }
+}
+```
 
-4. Initialize and deploy the web app project with Firebase CLI. (GIVE MORE INFO HOW TO DO THIS).
+#### Deploying Web App with CLI (windows)
+1. Open CLI terminal and navegate to firebase folder using `cd` command.
+2. Initialize a Firebase project with `firebase init`.
+3. Proceed with the initialization and then select *Cloud Functions* and *Hosting* features. CLI will find an existing project in this folder and then ask to configure *functions* and then *hosting* files. 
+4. *Hosting*. Select *TypeScript* as the language used in *Cloud Functions* and choose to use TSLint. Do not overwrite any files asked in this configuration.
+   - CLI may ask to install npm dependencies afterwards. It is wise to accept this procedure. 
+5. *Hosting*. Press enter to select "public" as the web app main folder and accept to rewrite all urls to index. Do not overwrite any files asked in this configuration.
+6. Deploy the web app project with `firebase deploy`. This step will take some time, and in the end CLI will return the URL for the web app, such as "Hosting URL: https://esp32-mains-voltage-monitor.firebaseapp.com".
+
 
 #### Hardware Configuration
 
 1. Upload the code to ESP32 board ([DOIT Esp32 DevKit v1](https://docs.zerynth.com/latest/official/board.zerynth.doit_esp32/docs/index.html) used).
 2. Connect the VP pin to any analog voltage source ranging from 0 to 3.3 to acquire data that will be displayed in the Firebase web app. In this project, the analog source is provided by the mains voltage sensor described by the schematic below.
+
+
+
+
 
 (IMAGE)
 
