@@ -65,7 +65,7 @@ const firebaseConfig = {
    - CLI may ask to install npm dependencies afterwards. It is wise to accept this procedure. 
 5. **Hosting**. Press enter to select **public** as the web app main folder and accept to rewrite all urls to index. Do not overwrite any files asked in this configuration.
 6. Deploy the web app project with `firebase deploy`. This step will take some time and, in the end, CLI will return the URL for the web app, such as **Hosting URL: https://esp32-mains-voltage-monitor.firebaseapp.com**.
-   - To emulate HTTP functions and hosting for testing on local URLs, use `firebase serve --only functions, hosting`. More information about CLI can be found on [Firebase CLI reference](https://firebase.google.com/docs/cli).
+   - To emulate HTTP functions and hosting for testing on local URLs, use `firebase serve --only functions, hosting`. More information about CLI can be found at [Firebase CLI reference website](https://firebase.google.com/docs/cli).
 
 #### Hardware Configuration
 
