@@ -1,4 +1,4 @@
-# Mains Voltage Remote Monitoring
+# Mains Remote Voltmeter with ESP32 and Firebase
 
 ![Firebase Voltmeter Demo](demo/voltmeter-demo.gif)
 
