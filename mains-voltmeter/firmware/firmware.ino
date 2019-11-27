@@ -14,10 +14,10 @@
 //=================================================================================================
 
 // Definitions for Wifi and Firebase
-#define WIFI_SSID           "XXX"                 // owner's network ssid
-#define WIFI_PASSWORD       "XXX"                 // owner's network password
-#define FIREBASE_HOST       "XXX"                 // firebase's project site
-#define FIREBASE_AUTH       "XXX"                 // secret (40 chars) (deprecated...)
+#define WIFI_SSID           "TP-LINK_NANDO"                 // owner's network ssid
+#define WIFI_PASSWORD       "Garfield01"                 // owner's network password
+#define FIREBASE_HOST       "esp32-mains-voltage-monitor.firebaseio.com"                 // firebase's project site
+#define FIREBASE_AUTH       "lfpr8JAyeZBn0xafZv2gvmdsKAnA9XJP98cKILah"                 // secret (40 chars) (deprecated...)
 
 // Definitions for ESP32 pinout
 #define ESP32_VP            36                    // ESP32 analog read pin VP

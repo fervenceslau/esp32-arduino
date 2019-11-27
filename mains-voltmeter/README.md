@@ -1,11 +1,20 @@
 # Mains Remote Voltmeter with ESP32 and Firebase
 
-![Firebase Voltmeter Demo](demo/voltmeter-demo.gif)
+This project uses Google's Firebase platform and an ESP32 system on a chip to create an Internet of Things remote monitoring application to measure the mains voltage (single phase) of a residential area from Brazil (typical 127V<sub>RMS</sub>).
+
+The purpose of this project is to get acquainted with the Firebase platform by implementing a Real Time Database to store acquired sensor data and employing Cloud Functions to generate timestamps for periodic measurement of distortion. Also, it gives the opportunity to review ESP32 programming with timer callbacks and deep sleep mode, which are respectively used for sampling sine wave signals (60 Hz) and creating a delay between readings (in minutes). The objective is to develop a web application capable of displaying the waveforms of the measured mains voltage, its Fast Fourier Transform (FFT) and its Total Harmonic Distortion (THD).
+
+
+## Demo
+
+View the project demo at https://esp32-mains-voltage-monitor.web.app/
+
+![Firebase Voltmeter Demo](images/voltmeter-demo.gif)
 
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
@@ -72,9 +81,9 @@ const firebaseConfig = {
 1. Upload the firmware code to ESP32 board ([DOIT Esp32 DevKit v1](https://docs.zerynth.com/latest/official/board.zerynth.doit_esp32/docs/index.html)).
 2. Connect the VP pin to any analog voltage source ranging from 0 to 3.3V to sample the data that will be displayed in the Firebase web app every 10 minutes. In this project, this source is the mains voltage sensor ilustrated by the schematic below.
 
-| Circuit Schematic      | Simulation              |
-| -----------------------|------------------------ |
-|![](demo/schematic.png) | ![](demo/simulation.png)|
+| Circuit Schematic         | Simulation                 |
+| ------------------------- | -------------------------- |
+| ![](images/schematic.png) | ![](images/simulation.png) |
 
 In this circuit, R3 = R4 and R5 = R6 to make the differential gain equals to -(R5/R3). Also, R1 = R2 to polarize the output of the differential amplifier at 2.5V. The output (V<sub>sense</sub>) is measured after a voltage divider (R7 and R8) that limits the output voltage to the range between 0 and 3.3V.
 

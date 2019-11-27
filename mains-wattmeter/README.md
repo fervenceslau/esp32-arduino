@@ -2,7 +2,7 @@
 # Mains Remote Wattmeter with ESP32 and Firebase
 
 <p align="center">
-  <img width="480" src="demo/board-demo.jpg">
+  <img width="480" src="images/board-demo.jpg">
 </p>
 
 ## Authors
